@@ -1,0 +1,16 @@
+package decorator;
+
+public abstract class Beverage {
+
+    protected String description = "Unknown Beverage";
+
+    public String getDescription() {
+        return description;
+    }
+
+    public abstract double cost();
+
+    public void display() {
+        System.out.printf("%s $%s%n", getDescription(), cost());
+    }
+}
